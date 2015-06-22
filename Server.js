@@ -166,7 +166,7 @@ io.sockets.on('connection', function(socket) {
       // broadcast
         io.sockets.emit('message',
           {"source": srcUser,
-           "message123455": msg.message,
+           "message123455_update": msg.message,
            "target": msg.target});
     } else {
       /*// Look up the socket id
