@@ -1,0 +1,72 @@
+body{
+    color: red;
+}
+.Chatbox{
+    max-height: 350px;
+    height: 350px;
+    width: 300px;
+    background-color: #eaeaea;
+}
+.chatArea{
+    height:100%;
+    overflow: scroll;
+}
+.chatdiv{
+    /*background-color: #dbf3fd;*/
+    width: auto;
+}
+.chattext{
+    color: black;
+}
+.Chatbox table{
+    height: 100%;
+}
+.ChatRow{
+    height: 80%;
+}
+.CtrlRow{
+    height: 20%;
+}
+.Chatbox .chatctrl{
+    display: table-cell;
+    margin-bottom: 5px;
+    vertical-align: bottom;
+  float: none;
+}
+.Chatbox .chatctrl .input-group{
+    width: 100%;
+}
+.Chatbox .chatctrl .btn{
+    width: 20%;
+}
+#inp{
+    margin-right: 20px;
+    margin-left: 5px;
+    max-width: 190px;
+    
+}
+#logout{
+    color: #1b6878;
+}
+.logbox{
+    max-width: 500px;
+    margin-left: 20px;
+}
+#Clist{
+    max-height: 350px;
+    min-width: 300px;
+    background-color: #fbfbfb;
+    min-height:350px;
+}
+.CPerson{
+    min-height:30px;
+    display: block;
+    background-color: #ffffff;
+}
+.CPerson span{
+    display:table-cell;
+    vertical-align:middle;
+}
+.jumbotron{
+    
+}

@@ -1,0 +1,40 @@
+html
+    head
+        link(rel='stylesheet',href='style/style.css')
+        link(rel='stylesheet',href='style/bootstrap.css')
+        script(src='script/jquery.js')
+    body
+        
+        div(class='container-fluid')
+            div(class='jumbotron')
+                div(class='text-center')
+                    h1='Test Client'
+            div(class='MainCnt')
+                span.pull-left Hi #{Name}
+                a#logout.pull-right(href="#") Logout
+                br
+                div#Clist.pull-right.panel.panel-default.pull-right
+                    div.panel-heading Online Users
+                    div.panel-body
+                        each user in AllUsers
+                            div.CPerson
+                                span('uemail'=user.email)=user.name
+                div.panel.panel-default(class='Chatbox')
+                    div.panel-heading Online Users
+                    div.panel-body
+                        table
+                            tr.ChatRow
+                                td.chatArea
+                                    div(class='chatdiv')
+                                        span(class='chattext')
+                            tr
+                                td.CtrlRow
+                                    div.pull-down(class='chatctrl')
+                                        div(class='input-group')
+                                            input#inp(type='text' class='form-control')
+                                            span(class='input-group-button')
+                                                button#btn(type='button' class='btn btn-default').
+                                                    Send
+    script(src='script/socketio.js')
+    script(src='script/script.js')
+    
